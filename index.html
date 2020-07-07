@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta id="myViewport" name="viewport" content="width=device-width,user-scalable=yes">
+    <meta charset=utf-8>
+    <title>Baltimore Police</title>
+    <link rel="stylesheet" type="text/css" href="https://bedrock.brettonw.com/dist/latest/bedrock.css">
+</head>
+
+<style>
+    body {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    div[id="bedrock-database-display"] {
+        height: 500px;
+        border: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        border-color: #bbb;
+    }
+
+    .bedrock-paged-display-table-row {
+        height: 24px;
+        padding: 0 3px;
+    }
+
+    .bedrock-paged-display-table-row-entry-text {
+        vertical-align: middle;
+        line-height: 24px;
+        font-size: 12px;
+    }
+
+    .bedrock-combobox-paged-display-table-row {
+        height: 19px;
+    }
+
+    .bedrock-combobox-paged-display-hover {
+        color: white;
+    }
+
+    .bedrock-paged-display-hover {
+        color: white;
+        background-color: #aaa;
+    }
+</style>
+
+<body>
+<h2>Deaths</h2>
+<div style="margin-left:15px; margin-bottom: 10px;">
+    <div id="bedrock-database-container"></div>
+    <div id="bedrock-database-display"></div>
+</div>
+<hr>
+<h2>Detail</h2>
+<div class="container-div" style="margin-left:15px; margin-bottom: 10px;"><pre id="response-container"></pre></div>
+</body>
+
+<script src="https://bedrock.brettonw.com/dist/latest/bedrock.js"></script>
+<script src="index.js"></script>
+</html>
