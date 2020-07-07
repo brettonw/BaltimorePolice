@@ -56,7 +56,9 @@ Bedrock.Http.get(cityOverallSourceUrl, (response) => {
                     { name: "race", displayName: "Race", width: 0.075 },
                     { name: "cause", displayName: "Cause", width: 0.1 },
                     { name: "age", displayName: "Age", width: 0.05 },
-                    { name: "district", displayName: "District", width: 0.05 }
+                    { name: "district", displayName: "District", width: 0.05 },
+                    { name: "zip_code", displayName: "Zip Code", width: 0.075 },
+                    { name: "street_address", displayName: "Street", width: 0.2 },
                 ],
                 onclick: function (record) {
                     document.getElementById("response-container").innerHTML = JSON.stringify(record, null, 4);
